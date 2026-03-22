@@ -1,33 +1,36 @@
-# Spatial Analysis Foundations: Coordinates, Distance, and Contiguity
+# Analisis Spasial: Koordinat, Jarak, dan Contiguity
 
-Proyek ini mengeksplorasi tiga pilar utama dalam analisis spasial yang diimplementasikan menggunakan **KNIME Analytics Platform**. [cite_start]Materi ini mencakup teori dasar hingga perhitungan matriks pembobot yang digunakan dalam Sistem Informasi Geografis (GIS)[cite: 13, 16].
+[cite_start]Proyek ini mengeksplorasi fondasi mendasar dalam **Sistem Informasi Geografis (GIS)** dan analisis data spasial[cite: 1, 14]. [cite_start]Materi ini mencakup teori lokasi, berbagai metrik perhitungan jarak, hingga konsep konektivitas (contiguity) yang diimplementasikan menggunakan **KNIME Analytics Platform**[cite: 14, 16].
 
-## Konsep Utama
+## 📌 Topik Utama
 
 ### 1. Koordinat Spasial
-[cite_start]Mengelola lokasi menggunakan dua model data utama[cite: 17, 29]:
-* [cite_start]**Model Vektor**: Menggunakan koordinat untuk membentuk titik, garis, dan area[cite: 31].
-* [cite_start]**Model Raster**: Menggunakan sel grid (piksel) untuk merepresentasikan fitur spasial[cite: 33].
+[cite_start]Mendefinisikan lokasi data menggunakan sistem referensi geografis[cite: 17, 18]:
+* [cite_start]**Model Vektor**: Merepresentasikan fitur dunia nyata sebagai titik, garis, dan area[cite: 30, 31].
+* [cite_start]**Model Raster**: Menggunakan kisi sel (piksel) untuk menyimpan informasi spasial[cite: 32, 33].
+* [cite_start]**Sistem Koordinat**: Mencakup koordinat geografis (3D/Bola seperti Latitude/Longitude) dan koordinat planar (2D/Datar seperti UTM)[cite: 19, 21, 24, 25, 27].
 
-### 2. Perhitungan Jarak
-[cite_start]Implementasi berbagai metrik jarak berdasarkan skala wilayah[cite: 34]:
-* [cite_start]**Euclidean**: Jarak garis lurus (planar) untuk area kecil seperti kota[cite: 36, 37].
-* [cite_start]**Geodesic**: Jarak akurat yang mempertimbangkan kelengkungan bumi (great circle) untuk wilayah luas[cite: 41, 42].
-* [cite_start]**Manhattan**: Aproksimasi jarak jaringan untuk pola jalan berbentuk grid[cite: 48].
-* [cite_start]**Network Distance**: Jarak jalur terpendek melalui jaringan transportasi menggunakan node dan arc[cite: 53, 54].
+### 2. Metrik Jarak antar Lokasi
+[cite_start]Implementasi berbagai metode pengukuran jarak berdasarkan skala wilayah penelitian[cite: 34, 35]:
+* [cite_start]**Euclidean Distance**: Jarak garis lurus "as the crow flies" untuk area kecil[cite: 36, 37].
+* [cite_start]**Geodesic Distance**: Perhitungan jarak akurat yang mempertimbangkan kelengkungan bumi (great circle) untuk wilayah luas[cite: 41, 42].
+* [cite_start]**Manhattan Distance**: Aproksimasi jarak untuk jaringan jalan dengan pola grid[cite: 46, 48].
+* [cite_start]**Network Distance**: Jarak jalur terpendek melalui jaringan transportasi (node dan arc) menggunakan algoritma tertentu[cite: 52, 53, 54].
 
-### 3. Contiguity (Konektivitas)
-[cite_start]Menentukan hubungan antar unit spasial berdasarkan batas yang dibagi bersama[cite: 141, 142]:
-* [cite_start]**Rook**: Berbagi sisi[cite: 145, 148].
-* [cite_start]**Bishop**: Berbagi sudut[cite: 147, 150].
-* [cite_start]**Queen**: Berbagi sisi atau sudut[cite: 146, 149].
+### 3. Konsep Contiguity (Konektivitas)
+[cite_start]Menentukan hubungan antar unit spasial berdasarkan batas wilayah yang bersinggungan[cite: 141, 142, 143]:
+* [cite_start]**Rook**: Unit yang berbagi sisi yang sama[cite: 145, 148].
+* [cite_start]**Bishop**: Unit yang hanya berbagi sudut[cite: 147, 150].
+* [cite_start]**Queen**: Unit yang berbagi sisi maupun sudut[cite: 146, 149].
 
-## Tools & Referensi
-* [cite_start]**Tools**: KNIME Analytics Platform[cite: 16].
-* **Referensi**: Wang, F., & Liu, L. (2023). [cite_start]*Computational Methods and GIS Applications in Social Science*[cite: 242].
+## 🛠️ Tools & Materi
+* [cite_start]**Software**: KNIME Analytics Platform untuk komputasi dan visualisasi[cite: 16].
+* **Dokumen Teori**: [Lihat Presentasi Kelompok 3](./Kelompok%203_Koordinat%20Spasial%2C%20Jarak%20antar%20Lokasi%2C%20dan%20Contiguity.pdf)
 
-## Kontributor (Kelompok 3)
-* [cite_start]Rizky Febrian [cite: 6]
-* [cite_start]Akmal Zhafif Makarim [cite: 8]
-* [cite_start]Zhafir Al-Haq Taqiyyuddin [cite: 10]
-* [cite_start]Najwan Nashrul Haq [cite: 12]
+## 📚 Referensi
+* Wang, F., & Liu, L. (2023). *Computational Methods and GIS Applications in Social Science*. [cite_start]CRC Press[cite: 242].
+* Cliff, A. D., & Ord, J. K. (1973). *Spatial Autocorrelation*. [cite_start]London: Pion[cite: 240].
+
+---
+**Kontributor (Kelompok 3):**
+[cite_start]Rizky Febrian, Akmal Zhafif Makarim, Zhafir Al-Haq Taqiyyuddin, Najwan Nashrul Haq[cite: 6, 8, 10, 12].
